@@ -9,7 +9,12 @@ internal class Program
         KodePos TablePos = new KodePos();
         KodePos.Kelurahan kelurahan = KodePos.Kelurahan.Maleer;
         int kodePos = TablePos.getKodePos(kelurahan);
-        Console.WriteLine("KodePos dari kelurahan " + kelurahan + " adalah" + kodePos);
+        Console.WriteLine("KodePos dari kelurahan " + kelurahan + " adalah " + kodePos);
+
+        // Soal 2 State-Base
+        Console.WriteLine();
+        DoorMachine PINTU = new DoorMachine();
+        PINTU.BukaPINTU();
 
     }
 }
